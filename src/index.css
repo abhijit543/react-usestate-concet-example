@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+section{
+  width:80%;
+  margin:auto;
+  min-height:400px;
+}
+
+.four{
+  width:20%;
+  margin:2%;
+  display:inline-block;
+  font-size:25px;
+  color:blue;
+}
+
+table{
+  border-collapse:collapse;
+}
+
+tr,th,td{
+  padding:10px 25px 10px;
+  border:0.5px solid skyblue;
+}
+
+th{
+  color:orange;
+}
+
+nav{
+  background-color:rgba(5, 81, 12, 0.783);
+  padding:15px;
+}
+
+.toplink{
+  color:white;
+  text-decoration:none;
+  margin-right:20px;
+}
+
+.toplink:focus{
+  color:orange;
+}
+
+fieldset{
+  margin:2%;
+  width:19%;
+  border:none;
+  background-color:rgb(24, 3, 63);
+  display:inline-block;
+  vertical-align:top;
+  color:white;
+}
+
+legend{
+  padding:6px 25px 6px;
+  background-color:rgb(212, 56, 9);
+  color:white;
+  font-size:18px;
+}
