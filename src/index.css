@@ -71,3 +71,19 @@ legend{
   color:white;
   font-size:18px;
 }
+#bloglist{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.myblog{
+  margin: 20px;
+  vertical-align: top;
+}
+button{
+  margin:0px 5px 0px;
+  cursor: pointer;
+}
+button:focus{
+  background: red;
+  color: white;
+}
