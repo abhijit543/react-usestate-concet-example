@@ -71,19 +71,46 @@ legend{
   color:white;
   font-size:18px;
 }
+
 #bloglist{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display:grid;
+  grid-template-columns:33%  33%  33%;
 }
+
 .myblog{
-  margin: 20px;
-  vertical-align: top;
+  margin:20px;
+  vertical-align:top;
 }
+
 button{
   margin:0px 5px 0px;
-  cursor: pointer;
+  cursor:pointer;
 }
+
 button:focus{
-  background: red;
+  background:red;
+  color:white;
+}
+#mypage ul{
+  text-align: center;
+  list-style-type: none;
+}
+#mypage ul li{
+  display: inline-block;
+  padding: 6px 10px 6px;
+  cursor: pointer;
+  background: orange;
+  margin-right: 5px;
+}
+.next{
+  background-color: skyblue !important;
+  color: white;
+}
+.previous{
+  background-color: skyblue !important;
+  color: black;
+}
+.selected{
+  background-color: red !important;
   color: white;
 }

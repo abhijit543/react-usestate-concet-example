@@ -6,12 +6,11 @@ import Mycustomer from "./basic/customer";
 import ItemList from "./basic/item";
 import MyHookOne from "./hooks/hook1";
 import MyHookTwo from "./hooks/hook2";
-import Hook3 from "./hooks/hook3";
-import MyHookThree from "./hooks/hook4";
-import Hook6 from "./hooks/hook6";
-import MyHookSeven from "./hooks/hook7";
+import MyHookThree from "./hooks/hook3";
+import MyHookFour from "./hooks/hook4";
 import CityApi from "./api/cityapi";
-import MyBlog from "./api/blogapi";
+import MyBlogApi from "./api/blogapi";
+import MyContatct from "./api/contactapi";
 
 function App() {
   return (
@@ -38,34 +37,29 @@ function App() {
         <Link to="/hook3" className="toplink">
           H-3
         </Link>
-        <Link to="/hook4" className="toplink">
-          H-4
-        </Link>
-        <Link to="/hook6" className="toplink">
-          H-6
-        </Link>
         <Link to="/api1" className="toplink">
-          CityApi
+          City Api
         </Link>
-        <Link to="/blog" className="toplink">
+        <Link to="/api2" className="toplink">
           Blog Api
+        </Link>
+        <Link to="/api3" className="toplink">
+          Validation
         </Link>
       </nav>
 
       <Routes>
-        <Route exact path="/hook7/:name/:price/:seller" element={<MyHookSeven />} />
-        <Route exact path="/hook4" element={<MyHookThree />} />
+        <Route exact path="/api3" element={<MyContatct />} />
+        <Route exact path="/api2" element={<MyBlogApi />} />
+        <Route exact path="/api1" element={<CityApi />} />
+        <Route exact path="/hook4/:name/:price/:seller" element={<MyHookFour />} />
+        <Route exact path="/hook3" element={<MyHookThree />} />
         <Route exact path="/hook2" element={<MyHookTwo />} />
         <Route exact path="/hook1" element={<MyHookOne />} />
         <Route exact path="/" element={<Mycustomer />} />
         <Route exact path="/userlist" element={<Myuser />} />
         <Route exact path="/productlist" element={<Myproduct />} />
         <Route exact path="/props" element={<ItemList />} />
-        <Route exact path="/hook3" element={<Hook3 />} />
-
-        <Route exact path="/hook6" element={<Hook6 />} />
-        <Route exact path="/api1" element={<CityApi />} />
-        <Route exact path="/blog" element={<MyBlog />} />
       </Routes>
     </HashRouter>
   );
